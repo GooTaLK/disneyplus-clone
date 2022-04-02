@@ -1,0 +1,49 @@
+.Header {
+  position: fixed;
+  inset: 0;
+  bottom: auto;
+}
+
+.Header > nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 70px;
+  padding-left: 41px;
+  padding-right: 41px;
+  background-color: var(--bg-color);
+}
+
+.Header > nav.pinned {
+  justify-content: right;
+  background-color: transparent;
+}
+
+.Header > nav:not(.pinned) {
+  transition: opacity 0.5s ease-out;
+}
+
+.Header--invisible > nav:not(.pinned) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Header-logo {
+  width: 108px;
+  height: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.Header-logo img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.Header .Button,
+.Header .Button--highlight {
+  width: auto;
+}

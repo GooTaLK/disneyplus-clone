@@ -1,7 +1,13 @@
 import './App.css'
 
-function App() {
- return null
+import Header from './component/Header'
+
+function App () {
+  return (
+    <div className='App'>
+      <Header />
+    </div>
+  )
 }
 
 export default App
