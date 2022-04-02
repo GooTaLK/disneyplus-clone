@@ -1,0 +1,46 @@
+.Button,
+.Button--highlight {
+  --height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(var(--height) - 10px);
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Button {
+  background-color: var(--skyblue);
+  transition: filter 0.2s ease;
+}
+
+.Button--highlight {
+  background-color: var(--black);
+  border: 1px solid silver;
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+@media (min-width: 768px) {
+  .Button,
+  .Button--highlight {
+    height: var(--height);
+    font-size: 18px;
+  }
+}
+
+.Button:hover {
+  filter: brightness(1.2);
+}
+
+.Button--highlight:hover {
+  background-color: var(--white);
+  color: black;
+  border-color: transparent;
+}
