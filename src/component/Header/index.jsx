@@ -6,11 +6,11 @@ import Button from '../Button'
 
 import { LanguageContext } from '../../contexts/LanguageContext'
 
-function Header () {
+function Header ({ visible = true }) {
   const { language } = useContext(LanguageContext)
 
   return (
-    <header className='Header'>
+    <header className={visible ? 'Header' : 'Header Header--invisible'}>
       <nav className='pinned'>
         <Button
           highlight
