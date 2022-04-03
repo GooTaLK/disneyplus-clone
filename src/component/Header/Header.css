@@ -47,3 +47,12 @@
 .Header .Button--highlight {
   width: auto;
 }
+
+@media (min-width: 768px) {
+  .Header .Button,
+  .Header .Button--highlight {
+    --height: 50px;
+    padding-inline: 16px;
+    font-size: 18px;
+  }
+}
