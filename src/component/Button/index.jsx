@@ -11,7 +11,7 @@ function Button ({ highlight = false, color = '', height = NaN, newClass = '', c
       linkRef.current.style.backgroundColor = color
     }
     if (typeof height === 'number' && height > 0) {
-      linkRef.current.setProperty('--height', `${height}px`)
+      linkRef.current.style.setProperty('--height', `${height}px`)
     }
   }, [])
 
