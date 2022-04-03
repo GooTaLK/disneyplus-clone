@@ -1,11 +1,11 @@
 .Button,
 .Button--highlight {
-  --height: 50px;
+  --height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: calc(var(--height) - 10px);
+  height: var(--height);
   padding: 8px 14px;
   border-radius: 4px;
   font-size: 15px;
@@ -25,14 +25,6 @@
   transition-property: background-color, color, border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
-}
-
-@media (min-width: 768px) {
-  .Button,
-  .Button--highlight {
-    height: var(--height);
-    font-size: 18px;
-  }
 }
 
 .Button:hover {
