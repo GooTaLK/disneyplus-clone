@@ -1,13 +1,13 @@
 @import 'variables.css';
 
 @font-face {
-  font-family: 'Malter Sans';
-  src: url(../assets/fonts/malter-sans.regular-demo.otf);
+  font-family: 'Noto Sans';
+  src: url(../assets/fonts/NotoSans-Regular.ttf);
 }
 
 body {
   margin: 0;
-  font-family: 'Malter Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
