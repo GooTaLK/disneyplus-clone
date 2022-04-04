@@ -1,0 +1,124 @@
+.Hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 54vw 5vw 20vw;
+}
+
+.Hero-background {
+  position: absolute;
+  z-index: 10;
+  inset: 0 0 auto 0;
+  height: 100%;
+  background-image: url(https://cnbl-cdn.bamgrid.com/assets/80a0b968329bff3e3004cc448ac24ca5b893f5234405f83ca96a7d7fca83fc2e/original);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.Hero-content {
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.Hero-content h2 {
+  margin-top: 0;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.Hero-content img {
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 3vw;
+}
+
+.Hero-content .Button {
+  --height: 50px;
+  max-width: 540px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.Hero-content p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.Hero-content a {
+  color: var(--white);
+}
+
+.Hero .Hint {
+  position: absolute;
+  z-index: 20;
+  bottom: 2vw;
+}
+
+@media (min-width: 768px) {
+  .Hero {
+    padding-bottom: 10vw;
+  }
+
+  .Hero-content {
+    max-width: 600px;
+  }
+
+  .Hero-content h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .Hero-content img {
+    max-width: 320px;
+  }
+
+  .Hero-content .Button {
+    --height: 68px;
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .Hero-content p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Hero {
+    justify-content: start;
+    min-height: 100vh;
+    padding: 5.6vw;
+  }
+
+  .Hero-background {
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/eba5c9b2888e9e39367b19eafb0c967f1bbc125ba0a2b3ca71dcf0e587355fde/original);
+  }
+
+  .Hero-content {
+    width: 50%;
+    max-width: 640px;
+  }
+
+  .Hero-content h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .Hero-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .Hero .Hint {
+    margin-left: -14px;
+  }
+}
