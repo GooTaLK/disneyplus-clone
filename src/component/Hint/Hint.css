@@ -1,0 +1,34 @@
+.Hint {
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.Hint--animate {
+  animation: bounce 1.75s infinite;
+}
+
+.Hint > svg {
+  fill: var(--white);
+  pointer-events: none;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-7px);
+  }
+
+  60% {
+    transform: translateY(-3.5px);
+  }
+}
