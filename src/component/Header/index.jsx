@@ -18,7 +18,7 @@ function Header ({ visible = true }) {
           target='_blank'
           rel='noreferrer noopener'
         >
-          {language.logginButton}
+          {language.loginButton}
         </Button>
       </nav>
       <nav>
@@ -33,7 +33,7 @@ function Header ({ visible = true }) {
           target='_blank'
           rel='noreferrer noopener'
         >
-          {language.subscribeButton}
+          {language.signupButton}
         </Button>
         <Button
           highlight
@@ -41,7 +41,7 @@ function Header ({ visible = true }) {
           target='_blank'
           rel='noreferrer noopener'
         >
-          {language.logginButton}
+          {language.loginButton}
         </Button>
       </nav>
     </header>
