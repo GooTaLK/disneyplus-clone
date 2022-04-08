@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  padding: 54vw 5vw 20vw;
 }
 
 .Hero-background {
@@ -61,7 +60,14 @@
   bottom: 2vw;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
+  .Hero {
+    padding-top: 54vw;
+    padding-bottom: 20vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .Hero {
     padding-bottom: 10vw;
   }
@@ -95,7 +101,6 @@
   .Hero {
     justify-content: start;
     min-height: 100vh;
-    padding: 5.6vw;
   }
 
   .Hero-background {

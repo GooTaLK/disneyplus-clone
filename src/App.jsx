@@ -8,7 +8,7 @@ function App () {
     <div className='App'>
       <Header visible={false} />
       <main>
-        <Hero />
+        <Hero newClass='App-section' />
       </main>
     </div>
   )
