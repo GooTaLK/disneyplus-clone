@@ -1,5 +1,16 @@
 .App {
   min-height: 100vh;
+  overflow-y: auto;
   background-color: var(--bg-color);
   color: #f9f9f9;
+}
+
+.App-section {
+  padding: 5vw;
+}
+
+@media (min-width: 1024px) {
+  .App-section {
+    padding: 5.6vw;
+  }
 }
