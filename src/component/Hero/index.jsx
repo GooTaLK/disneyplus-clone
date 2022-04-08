@@ -7,11 +7,11 @@ import Hint from '../Hint'
 
 import { LanguageContext } from '../../contexts/LanguageContext'
 
-function Hero () {
+function Hero ({ newClass = '' }) {
   const { language } = useContext(LanguageContext)
 
   return (
-    <section className='Hero'>
+    <section className={newClass !== '' ? `${newClass} Hero` : 'Hero'}>
       <div className='Hero-background' />
 
       <div className='Hero-content'>
