@@ -6,6 +6,20 @@
   min-height: 70vh;
 }
 
+@media (max-width: 768px) {
+  .Hero {
+    padding-top: 54vw;
+    padding-bottom: 20vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Hero {
+    padding-top: 54vw;
+    padding-bottom: 10vw;
+  }
+}
+
 .Hero-background {
   position: absolute;
   z-index: 10;
@@ -60,18 +74,7 @@
   bottom: 2vw;
 }
 
-@media (max-width: 1024px) {
-  .Hero {
-    padding-top: 54vw;
-    padding-bottom: 20vw;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .Hero {
-    padding-bottom: 10vw;
-  }
-
+@media (min-width: 768px) {
   .Hero-content {
     max-width: 600px;
   }
