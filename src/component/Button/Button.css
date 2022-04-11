@@ -27,11 +27,13 @@
   transition-timing-function: ease;
 }
 
-.Button:hover {
+.Button:hover,
+.Button:focus {
   filter: brightness(1.2);
 }
 
-.Button--highlight:hover {
+.Button--highlight:hover,
+.Button--highlight:focus {
   background-color: var(--white);
   color: black;
   border-color: transparent;
