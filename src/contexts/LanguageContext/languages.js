@@ -28,7 +28,9 @@ const languages = {
     planYearlyTitle: 'DISNEY+ YEARLY',
     planYearlyCurrency: `${country.currency} ${country.prices.yearly}/year*`,
     planYearlyDescription: 'A full year of series and movies from Disney, Pixar, Marvel, Star Wars and National Geographic at a unique price.',
-    planYearlyButtonText: 'SIGN UP'
+    planYearlyButtonText: 'SIGN UP',
+    multidevicesInfoTitle: 'Watch the way you want',
+    multidevicesInfoDescription: 'Enjoy the big screen experience on your TV, or watch on your tablet, laptop, phone and more. You can watch an ever-growing selection of titles in 4K. Plus, you can stream on 4 screens at once, so everyone’s happy.'
   },
   spanish: {
     loginButton: 'INICIAR SESIÓN',
@@ -50,7 +52,9 @@ const languages = {
     planYearlyTitle: 'DISNEY+ ANUAL',
     planYearlyCurrency: `${country.currency} ${country.prices.yearly}/año*`,
     planYearlyDescription: 'Por un precio único, todo un año de películas y series de Disney, Pixar, Marvel, Star Wars y National Geographic.',
-    planYearlyButtonText: 'SUSCRÍBETE AHORA'
+    planYearlyButtonText: 'SUSCRÍBETE AHORA',
+    multidevicesInfoTitle: 'Cuando quieras, donde quieras',
+    multidevicesInfoDescription: 'Disfrútalo en tu pantalla favorita, ya sea tu TV, tableta, computadora, teléfono y otros. Vive una experiencia única con una amplia selección de títulos en 4K. Además, puedes ver en cuatro pantallas en simultáneo para que nadie se quede afuera.'
   }
 }
 
