@@ -1,0 +1,65 @@
+.TextSide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.TextSide-text {
+  padding-inline: 2vw;
+}
+
+.TextSide img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .TextSide {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .TextSide img,
+  .TextSide-text {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.TextSide-title {
+  margin-block: 0 16px;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.TextSide-description {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .TextSide-title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .TextSide-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .TextSide-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .TextSide-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
