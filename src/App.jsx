@@ -4,6 +4,7 @@ import Header from './component/Header'
 import Hero from './component/Hero'
 import PlanList from './component/PlanList'
 import TextSide from './component/TextSide'
+import Exclusive from './component/Exclusive'
 
 function App () {
   return (
@@ -13,6 +14,7 @@ function App () {
         <Hero newClass='App-section' />
         <PlanList newClass='App-section' />
         <TextSide newClass='App-section' />
+        <Exclusive newClass='App-section' />
       </main>
     </div>
   )
