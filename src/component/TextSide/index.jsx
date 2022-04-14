@@ -13,8 +13,8 @@ function TextSide ({ newClass = '' }) {
     >
       <img src='https://cnbl-cdn.bamgrid.com/assets/dae41e464f90a537d55064a1609a99890fb93a408af955519dbe9992e0ab3a04/original' alt='4 Devices' />
       <div className='TextSide-text'>
-        <h2 className='TextSide-title'>{language.multidevicesInfoTitle}</h2>
-        <p className='TextSide-description'>{language.multidevicesInfoDescription}</p>
+        <h2>{language.multidevicesInfoTitle}</h2>
+        <p>{language.multidevicesInfoDescription}</p>
       </div>
     </section>
   )
