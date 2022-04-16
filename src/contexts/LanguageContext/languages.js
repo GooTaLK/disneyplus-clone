@@ -32,7 +32,9 @@ const languages = {
     multidevicesInfoTitle: 'Watch the way you want',
     multidevicesInfoDescription: 'Enjoy the big screen experience on your TV, or watch on your tablet, laptop, phone and more. You can watch an ever-growing selection of titles in 4K. Plus, you can stream on 4 screens at once, so everyone’s happy.',
     exclusiveTitle: 'Exclusive Disney+ Originals',
-    exclusiveDescription: 'Watch never-before-seen movies, series, shorts and more from the world’s greatest storytellers – only available on Disney+'
+    exclusiveDescription: 'Watch never-before-seen movies, series, shorts and more from the world’s greatest storytellers - only available on Disney+',
+    downloadSectionTitle: 'Download any series or movie',
+    downloadSectionDescription: 'Download whatever you want and watch whenever you want. Your favorites will always stay with you, even if your Wi-Fi won’t.'
   },
   spanish: {
     loginButton: 'INICIAR SESIÓN',
@@ -58,7 +60,9 @@ const languages = {
     multidevicesInfoTitle: 'Cuando quieras, donde quieras',
     multidevicesInfoDescription: 'Disfrútalo en tu pantalla favorita, ya sea tu TV, tableta, computadora, teléfono y otros. Vive una experiencia única con una amplia selección de títulos en 4K. Además, puedes ver en cuatro pantallas en simultáneo para que nadie se quede afuera.',
     exclusiveTitle: 'Originales de Disney+ exclusivos',
-    exclusiveDescription: 'Disfruta de películas, series y documentales nunca antes vistos. Solo en Disney+.'
+    exclusiveDescription: 'Disfruta de películas, series y documentales nunca antes vistos. Solo en Disney+.',
+    downloadSectionTitle: 'Descarga series y películas',
+    downloadSectionDescription: 'Descargas ilimitadas para ver lo que quieras, cuando quieras. Lleva tus historias favoritas siempre contigo, incluso sin conexión.'
   }
 }
 
