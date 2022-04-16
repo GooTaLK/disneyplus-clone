@@ -5,6 +5,7 @@ import Hero from './component/Hero'
 import PlanList from './component/PlanList'
 import MultiDevicesInfo from './component/MultiDevicesInfo'
 import Exclusive from './component/Exclusive'
+import DownloadSection from './component/DownloadSection'
 
 function App () {
   return (
@@ -15,6 +16,7 @@ function App () {
         <PlanList newClass='App-section' />
         <MultiDevicesInfo newClass='App-section' />
         <Exclusive newClass='App-section' />
+        <DownloadSection newClass='App-section' />
       </main>
     </div>
   )
