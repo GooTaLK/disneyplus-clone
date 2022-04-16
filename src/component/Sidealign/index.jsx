@@ -1,3 +1,5 @@
+import { useLayoutEffect, useState } from 'react'
+
 import './Sidealign.css'
 
 function Sidealign ({
@@ -5,11 +7,15 @@ function Sidealign ({
   reverse = false,
   extendImage = false,
   titleH3 = false,
-  imageSource,
+  imageSource: imageSourceProp,
   imageAlt,
   title,
   description
 }) {
+  const [imageSource, setImageSource] = useState(
+    typeof imageSourceProp === 'string' ? imageSourceProp : null
+  )
+
   function fillClassName () {
     let className = 'Sidealign'
 
@@ -22,6 +28,25 @@ function Sidealign ({
 
     return className
   }
+
+  useLayoutEffect(() => {
+    if (typeof imageSourceProp !== 'object') return
+
+    function chooseImageSource () {
+      if (window.innerWidth >= 768 && imageSource !== imageSourceProp?.largeWindow) {
+        setImageSource(imageSourceProp?.largeWindow)
+      } else if (window.innerWidth < 768 && imageSource !== imageSourceProp?.smallWindow) {
+        setImageSource(imageSourceProp?.smallWindow)
+      }
+    }
+
+    chooseImageSource()
+    window.addEventListener('resize', chooseImageSource)
+
+    return () => {
+      window.removeEventListener('resize', chooseImageSource)
+    }
+  }, [])
 
   return (
     <section
