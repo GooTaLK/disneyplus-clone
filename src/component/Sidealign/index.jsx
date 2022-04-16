@@ -1,20 +1,40 @@
-import { useContext } from 'react'
-
 import './Sidealign.css'
 
-import { LanguageContext } from '../../contexts/LanguageContext'
+function Sidealign ({
+  newClass = '',
+  reverse = false,
+  extendImage = false,
+  titleH3 = false,
+  imageSource,
+  imageAlt,
+  title,
+  description
+}) {
+  function fillClassName () {
+    let className = 'Sidealign'
 
-function Sidealign ({ newClass = '' }) {
-  const { language } = useContext(LanguageContext)
+    if (reverse) {
+      className += ` ${className}--reverse`
+    }
+    if (newClass !== '') {
+      className = `${newClass} ${className}`
+    }
+
+    return className
+  }
 
   return (
     <section
-      className={newClass !== '' ? `${newClass} Sidealign` : 'Sidealign'}
+      className={fillClassName()}
     >
-      <img src='https://cnbl-cdn.bamgrid.com/assets/dae41e464f90a537d55064a1609a99890fb93a408af955519dbe9992e0ab3a04/original' alt='4 Devices' />
+      <div className={extendImage ? 'Sidealign-image Sidealign-image--extended' : 'Sidealign-image'}>
+        <img src={imageSource} alt={imageAlt} />
+      </div>
       <div className='Sidealign-text'>
-        <h2>{language.multidevicesInfoTitle}</h2>
-        <p>{language.multidevicesInfoDescription}</p>
+        {
+          titleH3 ? <h3>{title}</h3> : <h2>{title}</h2>
+        }
+        <p>{description}</p>
       </div>
     </section>
   )

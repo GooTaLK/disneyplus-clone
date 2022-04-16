@@ -3,6 +3,12 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  overflow-x: hidden;
+}
+
+.Sidealign-image,
+.Sidealign-text {
+  position: relative;
 }
 
 .Sidealign-text {
@@ -10,19 +16,35 @@
 }
 
 .Sidealign img {
+  position: relative;
+  left: 0;
   width: 100%;
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .Sidealign {
-    flex-direction: row-reverse;
     text-align: left;
   }
 
-  .Sidealign img,
+  .Sidealign--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .Sidealign-image,
   .Sidealign-text {
     width: 50%;
+  }
+
+  .Sidealign-image img {
     margin-bottom: 0;
+  }
+
+  .Sidealign-image--extended img {
+    width: 200%;
+  }
+
+  .Sidealign--reverse .Sidealign-image--extended img {
+    left: -100%;
   }
 }
