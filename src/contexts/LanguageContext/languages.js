@@ -34,7 +34,16 @@ const languages = {
     exclusiveTitle: 'Exclusive Disney+ Originals',
     exclusiveDescription: 'Watch never-before-seen movies, series, shorts and more from the world’s greatest storytellers - only available on Disney+',
     downloadSectionTitle: 'Download any series or movie',
-    downloadSectionDescription: 'Download whatever you want and watch whenever you want. Your favorites will always stay with you, even if your Wi-Fi won’t.'
+    downloadSectionDescription: 'Download whatever you want and watch whenever you want. Your favorites will always stay with you, even if your Wi-Fi won’t.',
+    devicesTitle: 'Available on your favourite devices',
+    devicesComputerTitle: 'Computer',
+    devicesComputerList: ['Chrome OS', 'MacOS', 'Windows PC'],
+    devicesTvTitle: 'TV',
+    devicesTvList: ['Amazon Fire TV', 'Android TV', 'Apple TV', 'Chromecast', 'LG TV', 'Samsung'],
+    devicesGameConsolesTitle: 'Game Consoles',
+    devicesGameConsolesList: ['PS4', 'PS5', 'Xbox One', 'Xbox Series X', 'Xbox Series S'],
+    devicesMobileTabletTitle: 'Mobile & Tablet',
+    devicesMobileTabletList: ['Amazon Fire Tablets', 'Android Phones & Tablets', 'iPhone & iPad']
   },
   spanish: {
     loginButton: 'INICIAR SESIÓN',
@@ -62,7 +71,16 @@ const languages = {
     exclusiveTitle: 'Originales de Disney+ exclusivos',
     exclusiveDescription: 'Disfruta de películas, series y documentales nunca antes vistos. Solo en Disney+.',
     downloadSectionTitle: 'Descarga series y películas',
-    downloadSectionDescription: 'Descargas ilimitadas para ver lo que quieras, cuando quieras. Lleva tus historias favoritas siempre contigo, incluso sin conexión.'
+    downloadSectionDescription: 'Descargas ilimitadas para ver lo que quieras, cuando quieras. Lleva tus historias favoritas siempre contigo, incluso sin conexión.',
+    devicesTitle: 'Disponible en tus dispositivos favoritos',
+    devicesComputerTitle: 'Computadoras',
+    devicesComputerList: ['Chrome OS', 'MacOS', 'Windows PC'],
+    devicesTvTitle: 'TV',
+    devicesTvList: ['Amazon Fire TV', 'Android TV', 'Apple TV', 'Chromecast', 'LG TV', 'Samsung'],
+    devicesGameConsolesTitle: 'Consolas',
+    devicesGameConsolesList: ['PS4', 'PS5', 'Xbox One', 'Xbox Series X', 'Xbox Series S'],
+    devicesMobileTabletTitle: 'Celulares y tabletas',
+    devicesMobileTabletList: ['Tabletas Amazon Fire', 'Celulares y tabletas Android', 'iPhone y iPad']
   }
 }
 
