@@ -8,48 +8,12 @@
   background-repeat: no-repeat;
 }
 
-.Plan h2,
-.Plan p {
-  margin-block: 0;
-  font-size: 15px;
-  line-height: 25px;
-}
-
-.Plan h3 {
-  margin-bottom: 0;
-  font-size: 22px;
-  line-height: 32px;
-  color: var(--white);
+.Plan h2 {
+  color: silver;
 }
 
 .Plan p {
   flex-grow: 1;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .Plan h2,
-  .Plan p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .Plan h3 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .Plan h2,
-  .Plan p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .Plan h3 {
-    font-size: 28px;
-    line-height: 38px;
-  }
 }
 
 .Plan .Button {

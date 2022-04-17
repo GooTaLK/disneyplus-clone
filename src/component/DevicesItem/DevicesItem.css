@@ -11,6 +11,11 @@
   margin-block: 0;
   padding-left: 0;
 }
+
 .Devices-gridItem li {
   list-style: none;
+}
+
+.Devices-gridItem p {
+  margin-bottom: 0;
 }

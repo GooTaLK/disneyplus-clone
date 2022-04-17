@@ -40,13 +40,6 @@
   text-align: center;
 }
 
-.Hero-content h2 {
-  margin-top: 0;
-  font-size: 22px;
-  line-height: 32px;
-  color: var(--white);
-}
-
 .Hero-content img {
   width: 100%;
   max-width: 180px;
@@ -58,11 +51,6 @@
   max-width: 540px;
   margin-top: 12px;
   margin-bottom: 20px;
-}
-
-.Hero-content p {
-  margin-top: 0;
-  font-size: 14px;
 }
 
 .Hero-content a {
@@ -80,11 +68,6 @@
     max-width: 600px;
   }
 
-  .Hero-content h2 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
   .Hero-content img {
     max-width: 320px;
   }
@@ -93,11 +76,6 @@
     --height: 68px;
     font-size: 18px;
     max-width: 600px;
-  }
-
-  .Hero-content p {
-    font-size: 15px;
-    line-height: 25px;
   }
 }
 
@@ -114,17 +92,6 @@
   .Hero-content {
     width: 50%;
     max-width: 640px;
-  }
-
-  .Hero-content h2 {
-    margin-bottom: 24px;
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  .Hero-content p {
-    font-size: 16px;
-    line-height: 26px;
   }
 
   .Hero .Hint {

@@ -2,25 +2,6 @@
   text-align: center;
 }
 
-.PlanList h2 {
-  font-size: 26px;
-  line-height: 36px;
-}
-
-@media (min-width: 768px) {
-  .PlanList h2 {
-    font-size: 32px;
-    line-height: 42px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .PlanList h2 {
-    font-size: 44px;
-    line-height: 54px;
-  }
-}
-
 .PlanList-plans {
   display: flex;
   justify-content: space-around;
@@ -41,18 +22,5 @@
 
   .PlanList-plans .Plan {
     height: 100%;
-  }
-}
-
-.PlanList-footer p {
-  font-size: 11px;
-  line-height: 21px;
-  margin-top: 0;
-}
-
-@media (min-width: 768px) {
-  .PlanList-footer p {
-    font-size: 12px;
-    line-height: 22px;
   }
 }
