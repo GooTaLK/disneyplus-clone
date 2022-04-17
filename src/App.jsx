@@ -6,6 +6,7 @@ import PlanList from './component/PlanList'
 import MultiDevicesInfo from './component/MultiDevicesInfo'
 import Exclusive from './component/Exclusive'
 import DownloadSection from './component/DownloadSection'
+import Devices from './component/Devices'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
         <MultiDevicesInfo newClass='App-section' />
         <Exclusive newClass='App-section' />
         <DownloadSection newClass='App-section' />
+        <Devices newClass='App-section' />
       </main>
     </div>
   )

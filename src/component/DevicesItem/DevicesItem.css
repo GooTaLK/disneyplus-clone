@@ -1,0 +1,16 @@
+.Devices-gridItem {
+  padding: 12px;
+  text-align: center;
+}
+
+.Devices-gridItem img {
+  width: 100%;
+}
+
+.Devices-gridItem ul {
+  margin-block: 0;
+  padding-left: 0;
+}
+.Devices-gridItem li {
+  list-style: none;
+}

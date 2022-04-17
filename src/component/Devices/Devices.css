@@ -1,0 +1,15 @@
+.Devices-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Devices-grid .Devices-gridItem {
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .Devices-grid .Devices-gridItem {
+    width: 25%;
+  }
+}
