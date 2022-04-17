@@ -7,7 +7,9 @@ function DevicesItem ({ imageSource, imageAlt, title, devices }) {
       <h3>{title}</h3>
       <ul>
         {
-          devices.map((device, index) => <li key={index}><p>{device}</p></li>)
+          devices.map((device, index) => {
+            return <li key={index}><p className='medium'>{device}</p></li>
+          })
         }
       </ul>
     </div>

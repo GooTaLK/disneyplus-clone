@@ -11,7 +11,7 @@ function PlanList ({ newClass = '' }) {
 
   return (
     <section className={newClass !== '' ? `${newClass} PlanList` : 'PlanList'}>
-      <h2>{language.planListTitle}</h2>
+      <h1>{language.planListTitle}</h1>
       <ul className='PlanList-plans'>
         <li>
           <Plan
@@ -47,7 +47,7 @@ function PlanList ({ newClass = '' }) {
       </ul>
       <footer className='PlanList-footer'>
         <br />
-        <p>{language.planListFooter}</p>
+        <p className='footnote'>{language.planListFooter}</p>
       </footer>
     </section>
   )

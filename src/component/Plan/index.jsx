@@ -23,9 +23,9 @@ function Plan ({
 
   return (
     <div className='Plan' ref={plan}>
-      <h2>{title}</h2>
+      <h2 className='medium'>{title}</h2>
       <h3>{currency}</h3>
-      <p>{description}</p>
+      <p className='medium'>{description}</p>
       <Button
         color={buttonColor}
         href={link}
