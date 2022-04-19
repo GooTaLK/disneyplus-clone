@@ -43,7 +43,31 @@ const languages = {
     devicesGameConsolesTitle: 'Game Consoles',
     devicesGameConsolesList: ['PS4', 'PS5', 'Xbox One', 'Xbox Series X', 'Xbox Series S'],
     devicesMobileTabletTitle: 'Mobile & Tablet',
-    devicesMobileTabletList: ['Amazon Fire Tablets', 'Android Phones & Tablets', 'iPhone & iPad']
+    devicesMobileTabletList: ['Amazon Fire Tablets', 'Android Phones & Tablets', 'iPhone & iPad'],
+    FAQTitle: 'Frequently Asked Questions',
+    FAQ1: 'What is Disney+?',
+    FAQ1AnswerTitle: 'With Disney+, you get:',
+    FAQ1AnswerList: [
+      'A premium ad-free experience.',
+      'The greatest stories of Disney, Pixar, Marvel, Star Wars, and National Geographic, all in one place.',
+      'GroupWatch, a way to watch Disney+ together, even when you’re apart.',
+      'Unlimited downloads on up to 10 devices.',
+      'Over 100 titles in 4K UHD and HDR.',
+      'Up to 4 current streams.',
+      'IMAX Enhanced. Available with certain Marvel titles and accessible on all devices where Disney+ is supported.'
+    ],
+    FAQ2: 'Do you already have a Disney+ or Star+ subscription but want Combo+?',
+    FAQ2AnswerTitle: 'With Combo+:',
+    FAQ2AnswerList: [
+      'We will discount the value of your existing subscription to the Combo+ deal. (Yes, for the annual plan as well!)',
+      'If you have a monthly subscription, your monthly bill will be reduced to the Combo+ price.',
+      'If you have an annual subscription, we will divide your annual price into 12 equal parts and discount the monthly price to the Combo+ monthly payment.',
+      'A detailed email with all of the payment charges and deductions will be sent to your inbox as soon as you confirm your Combo+ payment method.',
+      'Remember you can cancel at any moment.'
+    ],
+    FAQ2AnswerFootnote: 'The Combo+ subscription is only offering a monthly plan at this moment.',
+    FAQ3: 'What payment methods can I use?',
+    FAQ3Answer: 'You can pay by credit card, debit card and through third parties.'
   },
   spanish: {
     loginButton: 'INICIAR SESIÓN',
@@ -80,7 +104,31 @@ const languages = {
     devicesGameConsolesTitle: 'Consolas',
     devicesGameConsolesList: ['PS4', 'PS5', 'Xbox One', 'Xbox Series X', 'Xbox Series S'],
     devicesMobileTabletTitle: 'Celulares y tabletas',
-    devicesMobileTabletList: ['Tabletas Amazon Fire', 'Celulares y tabletas Android', 'iPhone y iPad']
+    devicesMobileTabletList: ['Tabletas Amazon Fire', 'Celulares y tabletas Android', 'iPhone y iPad'],
+    FAQTitle: 'Preguntas frecuentes',
+    FAQ1: '¿Qué incluye Disney+?',
+    FAQ1AnswerTitle: 'Beneficios de la suscripción a Disney+:',
+    FAQ1AnswerList: [
+      'Experiencia prémium sin cortes comerciales.',
+      'Las mejores historias de Disney, Pixar, Marvel, Star Wars y National Geographic, todo en un mismo lugar.',
+      'Groupwatch: comparte tus historias favoritas, aunque estés lejos.',
+      'Descargas ilimitadas hasta en diez dispositivos compatibles.',
+      'Más de 100 títulos en 4K UHD y HDR.',
+      'Hasta cuatro pantallas a la vez: ¡disfrutan todos!',
+      'IMAX Enhanced: disponible en algunos títulos de Marvel y en todos los dispositivos compatibles con Disney+.'
+    ],
+    FAQ2: '¿Ya tienes Disney+ o Star+ y quieres Combo+?',
+    FAQ2AnswerTitle: 'Con Combo+:',
+    FAQ2AnswerList: [
+      'Descontaremos el valor de tu suscripción actual del precio de Combo+. (¡Sí, para el plan anual también!).',
+      'Si tienes una suscripción mensual, el valor que pagas mensualmente se descontará del precio final de Combo+.',
+      'Si tienes una suscripción anual, dividiremos el precio que pagaste en 12 partes iguales y descontaremos ese precio mensualmente del precio final de Combo+.',
+      'Te llegará un correo electrónico con el detalle de los cargos apenas confirmes el pago.',
+      'Recuerda que puedes cancelar en cualquier momento.'
+    ],
+    FAQ2AnswerFootnote: 'La suscripción a Combo+ es únicamente mensual, por el momento.',
+    FAQ3: '¿Qué métodos de pago puedo usar?',
+    FAQ3Answer: 'Puedes pagar con tarjeta de crédito, débito y a través de terceros.'
   }
 }
 
