@@ -9,7 +9,7 @@
   padding: 10vw 5vw;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .App-section {
     padding: 5.6vw;
   }
