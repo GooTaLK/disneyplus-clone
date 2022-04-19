@@ -7,6 +7,7 @@ import MultiDevicesInfo from './component/MultiDevicesInfo'
 import Exclusive from './component/Exclusive'
 import DownloadSection from './component/DownloadSection'
 import Devices from './component/Devices'
+import FAQSection from './component/FAQSection'
 
 function App () {
   return (
@@ -19,6 +20,7 @@ function App () {
         <Exclusive newClass='App-section' />
         <DownloadSection newClass='App-section' />
         <Devices newClass='App-section' />
+        <FAQSection newClass='App-section' />
       </main>
     </div>
   )
