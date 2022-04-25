@@ -7,10 +7,17 @@ import Hint from '../Hint'
 
 import { LanguageContext } from '../../contexts/LanguageContext'
 
-function Hero ({ newClass = '' }) {
+function Hero ({ newClass = '', hintMoveTo }) {
   const { language } = useContext(LanguageContext)
 
   const heroBackgroundRef = useRef()
+
+  function hintClickHandler () {
+    window.scrollTo({
+      top: hintMoveTo,
+      behavior: 'smooth'
+    })
+  }
 
   useLayoutEffect(() => {
     heroBackgroundRef.current.style.setProperty('--bg-medium', `url(${language.imagesSource.heroMedium})`)
@@ -42,7 +49,7 @@ function Hero ({ newClass = '' }) {
         </p>
       </div>
 
-      <Hint animate />
+      <Hint animate toClick={hintClickHandler} />
     </section>
   )
 }

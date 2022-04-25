@@ -38,7 +38,7 @@ function App () {
     <div className='App'>
       <Header visible={headerVisibility} />
       <main>
-        <Hero newClass='App-section' />
+        <Hero newClass='App-section' hintMoveTo={HEIGHT_TO_HIDE_HEADER} />
         <PlanList newClass='App-section' />
         <MultiDevicesInfo newClass='App-section' />
         <Exclusive newClass='App-section' />
