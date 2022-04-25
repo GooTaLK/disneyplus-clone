@@ -25,7 +25,7 @@
   z-index: 10;
   inset: 0 0 auto 0;
   height: 100%;
-  background-image: url(https://cnbl-cdn.bamgrid.com/assets/80a0b968329bff3e3004cc448ac24ca5b893f5234405f83ca96a7d7fca83fc2e/original);
+  background-image: var(--bg-medium);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@
   }
 
   .Hero-background {
-    background-image: url(https://cnbl-cdn.bamgrid.com/assets/eba5c9b2888e9e39367b19eafb0c967f1bbc125ba0a2b3ca71dcf0e587355fde/original);
+    background-image: var(--bg-large);
   }
 
   .Hero-content {
