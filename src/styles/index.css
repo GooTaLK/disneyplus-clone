@@ -53,6 +53,7 @@ p {
   line-height: 26px;
 }
 
+.fine,
 .footnote {
   font-size: 11px;
   line-height: 21px;
@@ -89,6 +90,7 @@ p {
     line-height: 28px;
   }
 
+  .fine,
   .footnote {
     font-size: 12px;
     line-height: 22px;
