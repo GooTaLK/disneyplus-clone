@@ -1,16 +1,28 @@
 const country = {
-  currency: 'PEN',
-  prices: {
-    combo: '44.90',
-    monthly: '25.90',
-    yearly: '259.90'
+  peru: {
+    currency: 'PEN',
+    prices: {
+      combo: '44.90',
+      monthly: '25.90',
+      yearly: '259.90'
+    }
+  },
+  usa: {
+    currency: 'USD',
+    prices: {
+      combo: '11.99',
+      monthly: '7.99',
+      yearly: '68.99'
+    }
   }
 }
+const COUNTRY = country.usa
 
 const languages = {
   english: {
-    loginButton: 'LOG IN',
-    signupButton: 'SIGN UP NOW',
+    language: 'english',
+    loginButton: 'Log in',
+    signupButton: 'Sign up now',
     signupOnlyMonthly: 'Sign up only to Disney+ monthly',
     signupOnlyYearly: 'Sign up only to Disney+ yearly',
     offerComboPlusButton: 'GET COMBO+ OFFER',
@@ -18,15 +30,15 @@ const languages = {
     planListTitle: 'Choose your plan',
     planListFooter: '*The price may vary if billed through other currencies, platforms or payment methods. Third party charges may apply.',
     planComboTitle: 'GET STAR+ & DISNEY+',
-    planComboCurrency: `${country.currency} ${country.prices.combo}/month*`,
+    planComboCurrency: `${COUNTRY.currency} ${COUNTRY.prices.combo}/month*`,
     planComboDescription: 'Save and get the two services together, with this unique offer. Enjoy now Disney+ and Star+ for a special price.',
     planComboButtonText: 'SIGN UP TO COMBO+',
     planMonthlyTitle: 'DISNEY+ MONTHLY',
-    planMonthlyCurrency: `${country.currency} ${country.prices.monthly}/month*`,
+    planMonthlyCurrency: `${COUNTRY.currency} ${COUNTRY.prices.monthly}/month*`,
     planMonthlyDescription: 'Purchase the Disney+ monthly plan and enjoy the latest releases that come from the cinema, originals and classics.',
     planMonthlyButtonText: 'SIGN UP',
     planYearlyTitle: 'DISNEY+ YEARLY',
-    planYearlyCurrency: `${country.currency} ${country.prices.yearly}/year*`,
+    planYearlyCurrency: `${COUNTRY.currency} ${COUNTRY.prices.yearly}/year*`,
     planYearlyDescription: 'A full year of series and movies from Disney, Pixar, Marvel, Star Wars and National Geographic at a unique price.',
     planYearlyButtonText: 'SIGN UP',
     multidevicesInfoTitle: 'Watch the way you want',
@@ -67,11 +79,39 @@ const languages = {
     ],
     FAQ2AnswerFootnote: 'The Combo+ subscription is only offering a monthly plan at this moment.',
     FAQ3: 'What payment methods can I use?',
-    FAQ3Answer: 'You can pay by credit card, debit card and through third parties.'
+    FAQ3Answer: 'You can pay by credit card, debit card and through third parties.',
+    termsOfUse: 'Terms of Use',
+    privacyPolicy: 'Privacy Policy',
+    interestBasedAds: 'Interest-Based Ads',
+    supportedDevices: 'Supported Devices',
+    helpCenter: 'Help Center',
+    aboutUs: 'About Us',
+    copyRight: '© 2022 Disney and its family of affiliated companies. All rights reserved.',
+    claimer: 'Disney+ is a paid subscription service, its content is subject to availability. The Disney+ service is marketed by Disney DTC LATAM, Inc., 2400 W Alameda AVE., Burbank CA 91521.',
+    imagesSource: {
+      heroMedium: 'https://cnbl-cdn.bamgrid.com/assets/533f790016017de0fa6affc30df24d567892f206ecd7467614b99bb854d2ab2e/original',
+      heroLarge: 'https://cnbl-cdn.bamgrid.com/assets/464d8592d684db66834fa1406231c0c24513c2aea3f07326c781a68f21301538/original',
+      comboPlanBackground: 'https://cnbl-cdn.bamgrid.com/assets/3c841d72f2b7f90a0cde5b752f4f0f3dae6d043fb5adccb0f795e3d37f608630/original',
+      multidevices: 'https://cnbl-cdn.bamgrid.com/assets/f09e9344c17a11eb6aaa054704cdb169ec8c2f9a661a5119994c632c47d72dd1/original',
+      exclusives: [
+        'https://cnbl-cdn.bamgrid.com/assets/ac915426b021288c04f8908ce12d080dcd70953fe0fac328383c7d5e3a253843/original',
+        'https://cnbl-cdn.bamgrid.com/assets/63c1be4d37c015f7861a3a7c284c5afa74c77d29d609f56a5400f1f34d85c5b4/original',
+        'https://cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original',
+        'https://cnbl-cdn.bamgrid.com/assets/8572f24f7ff388caa7c786a821cb2a34030141f5d81ea1c35444bad71faf1c0d/original',
+        'https://cnbl-cdn.bamgrid.com/assets/24069b782e1b1531b7197153b6ac1819191ca448aa4576cdd3767fa47270aae3/original',
+        'https://cnbl-cdn.bamgrid.com/assets/3b3873e224ad242c3881403e14bac752101fe4658900f5bb23b0eaab77313797/original',
+        'https://cnbl-cdn.bamgrid.com/assets/5a18c94c533869bbe5abeea4e94d9866d3f48f0d5aa6cb4b6a40e91d4c281c2b/original',
+        'https://cnbl-cdn.bamgrid.com/assets/c6a366b03bb9f332381cf85c8aaf93924540ed1a3dbc601d050bfcb52080a54e/original',
+        'https://cnbl-cdn.bamgrid.com/assets/aa512dad255ee92217f66c4fd5a5f01790fb718230f6ef99c4a8ac924c2c4c70/original'
+      ],
+      downloadSectionMedium: 'https://cnbl-cdn.bamgrid.com/assets/05eaa634ed3345fe39a45aa9e2effddb64ab990b8eeba3c48e59f3d02f9878df/original',
+      downloadSectionLarge: 'https://cnbl-cdn.bamgrid.com/assets/76fc866dc046df64c9ae6cc4be1d0aacbe5b188299726c6312f6009e6143399d/original'
+    }
   },
   spanish: {
-    loginButton: 'INICIAR SESIÓN',
-    signupButton: 'SUSCRÍBETE AHORA',
+    language: 'spanish',
+    loginButton: 'Iniciar sesión',
+    signupButton: 'Suscríbete ahora',
     signupOnlyMonthly: 'Suscribirme solo a Disney+ mensual',
     signupOnlyYearly: 'Suscribirme solo a Disney+ anual',
     offerComboPlusButton: 'CONTRATÁ OFERTA COMBO+',
@@ -79,15 +119,15 @@ const languages = {
     planListTitle: 'Elige tu plan',
     planListFooter: '* El precio podría variar en caso de que el pago se realice en otras monedas, plataformas o medios de pago. Podrían aplicar cargos de terceros.',
     planComboTitle: 'CONTRATA DISNEY+ Y STAR+',
-    planComboCurrency: `${country.currency} ${country.prices.combo}/mes*`,
+    planComboCurrency: `${COUNTRY.currency} ${COUNTRY.prices.combo}/mes*`,
     planComboDescription: 'Ahorra contratando los dos servicios juntos con esta oferta única. Disfruta Disney+ y Star+ por un precio único.',
     planComboButtonText: 'SUSCRÍBETE A COMBO+',
     planMonthlyTitle: 'DISNEY+ MENSUAL',
-    planMonthlyCurrency: `${country.currency} ${country.prices.monthly}/mes*`,
+    planMonthlyCurrency: `${COUNTRY.currency} ${COUNTRY.prices.monthly}/mes*`,
     planMonthlyDescription: 'Contrata el plan mensual de Disney+ y disfruta los últimos estrenos del cine, originales y clásicos inolvidables.',
     planMonthlyButtonText: 'SUSCRÍBETE AHORA',
     planYearlyTitle: 'DISNEY+ ANUAL',
-    planYearlyCurrency: `${country.currency} ${country.prices.yearly}/año*`,
+    planYearlyCurrency: `${COUNTRY.currency} ${COUNTRY.prices.yearly}/año*`,
     planYearlyDescription: 'Por un precio único, todo un año de películas y series de Disney, Pixar, Marvel, Star Wars y National Geographic.',
     planYearlyButtonText: 'SUSCRÍBETE AHORA',
     multidevicesInfoTitle: 'Cuando quieras, donde quieras',
@@ -128,7 +168,34 @@ const languages = {
     ],
     FAQ2AnswerFootnote: 'La suscripción a Combo+ es únicamente mensual, por el momento.',
     FAQ3: '¿Qué métodos de pago puedo usar?',
-    FAQ3Answer: 'Puedes pagar con tarjeta de crédito, débito y a través de terceros.'
+    FAQ3Answer: 'Puedes pagar con tarjeta de crédito, débito y a través de terceros.',
+    termsOfUse: 'Términos de uso',
+    privacyPolicy: 'Política de privacidad',
+    interestBasedAds: 'Publicidad personalizada',
+    supportedDevices: 'Dispositivos compatibles',
+    helpCenter: 'Ayuda',
+    aboutUs: 'Acerca de Disney+',
+    copyRight: '© 2022 Disney y su familia de compañías afiliadas. Todos los derechos reservados.',
+    claimer: 'Disney+ es un servicio por suscripción de pago, su contenido está sujeto a disponibilidad. El servicio Disney+ es comercializado por Disney DTC LATAM, Inc., 2400 W Alameda AVE., Burbank CA 91521.',
+    imagesSource: {
+      heroMedium: 'https://cnbl-cdn.bamgrid.com/assets/5ac121983f781d785e782e47945906b9009b13cf0a2933cca18963406bcd1d23/original',
+      heroLarge: 'https://cnbl-cdn.bamgrid.com/assets/231762aea722970615a6e04a16fb6bf2de2295e002ced3ba986c47b7fd551478/original',
+      comboPlanBackground: 'https://cnbl-cdn.bamgrid.com/assets/94fdfdd8e58dd050256132d3c5ec13ae75d5133889c6fb627f02053fccf806e3/original',
+      multidevices: 'https://cnbl-cdn.bamgrid.com/assets/dae41e464f90a537d55064a1609a99890fb93a408af955519dbe9992e0ab3a04/original',
+      exclusives: [
+        'https://cnbl-cdn.bamgrid.com/assets/ac915426b021288c04f8908ce12d080dcd70953fe0fac328383c7d5e3a253843/original',
+        'https://cnbl-cdn.bamgrid.com/assets/47420f96766e18e3581fb43673744c6f650397153e23c494f21c4774e54c9f67/original',
+        'https://cnbl-cdn.bamgrid.com/assets/1742d878d2d5475eae2afba94902b3b41b313fe1f0897579c3293c5b82c70693/original',
+        'https://cnbl-cdn.bamgrid.com/assets/0d48eda3cc24d42b565ca1a465a86a3a0e0f4a7f70dc2fec1c1edaeec2cbcc66/original',
+        'https://cnbl-cdn.bamgrid.com/assets/24069b782e1b1531b7197153b6ac1819191ca448aa4576cdd3767fa47270aae3/original',
+        'https://cnbl-cdn.bamgrid.com/assets/3b3873e224ad242c3881403e14bac752101fe4658900f5bb23b0eaab77313797/original',
+        'https://cnbl-cdn.bamgrid.com/assets/62b2382bfe7714fdde4f6ad404ae154009af780be7a73407e060d377c1400c6d/original',
+        'https://cnbl-cdn.bamgrid.com/assets/c6a366b03bb9f332381cf85c8aaf93924540ed1a3dbc601d050bfcb52080a54e/original',
+        'https://cnbl-cdn.bamgrid.com/assets/a9e8fe82e3d2a81fa793d646a0807bf8a676cf2e44fd373967b79ba6ac4fac52/original'
+      ],
+      downloadSectionMedium: 'https://cnbl-cdn.bamgrid.com/assets/8c66d5e074d0d278b8077f21d579ba049835a2f380d3fa02684407fa27555e1b/original',
+      downloadSectionLarge: 'https://cnbl-cdn.bamgrid.com/assets/bfba981dd774075133f01cb897c280e3616d573e1743f558b417cff2e8b349c0/original'
+    }
   }
 }
 
