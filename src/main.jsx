@@ -7,10 +7,8 @@ import { LanguageContextProvider } from './contexts/LanguageContext'
 import App from './App'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <LanguageContextProvider>
-      <App />
-    </LanguageContextProvider>
-  </React.StrictMode>,
+  <LanguageContextProvider>
+    <App />
+  </LanguageContextProvider>,
   document.getElementById('root')
 )
