@@ -9,8 +9,16 @@
   padding: 10vw 5vw;
 }
 
+.App-footer {
+  padding: 5vw;
+}
+
 @media (min-width: 1025px) {
   .App-section {
     padding: 5.6vw;
+  }
+
+  .App-footer {
+    padding: 26px 8px;
   }
 }

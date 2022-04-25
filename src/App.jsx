@@ -10,6 +10,7 @@ import Exclusive from './component/Exclusive'
 import DownloadSection from './component/DownloadSection'
 import Devices from './component/Devices'
 import FAQSection from './component/FAQSection'
+import Footer from './component/Footer'
 
 const HEIGHT_TO_HIDE_HEADER = 600
 let isHeaderVisible
@@ -44,6 +45,7 @@ function App () {
         <DownloadSection newClass='App-section' />
         <Devices newClass='App-section' />
         <FAQSection newClass='App-section' />
+        <Footer newClass='App-footer' />
       </main>
     </div>
   )

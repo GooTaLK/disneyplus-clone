@@ -1,0 +1,69 @@
+.Footer {
+  text-align: center;
+}
+
+.Footer-logo {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 10px;
+  width: 80px;
+}
+
+.Footer-actions {
+  margin-inline: auto;
+  margin-bottom: 15px;
+  max-width: 1024px;
+}
+
+.Footer-selectLanguage > select {
+  appearance: none;
+  display: inline-block;
+  margin: 8px auto;
+  padding-inline: 22px;
+  background-color: transparent;
+  border: none;
+  color: silver;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .Footer-selectLanguage > select {
+    padding-inline: 26px;
+  }
+}
+
+.Footer-selectLanguage > select > option {
+  color: var(--black);
+}
+
+.Footer-links {
+  display: inline;
+}
+
+.Footer ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.Footer-links > li {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.Footer-links > li > a {
+  color: silver;
+  text-decoration: none;
+}
+
+.Footer-selectLanguage > select:hover {
+  text-decoration: underline;
+}
+
+.Footer-selectLanguage > select:hover,
+.Footer-links > li > a:hover {
+  color: var(--white);
+}
+
+.Footer .footnote:not(:last-of-type) {
+  margin-bottom: 20px;
+}
