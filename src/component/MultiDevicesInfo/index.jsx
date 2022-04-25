@@ -11,7 +11,7 @@ function MultiDevicesInfo ({ newClass = '' }) {
     <Sidealign
       newClass={newClass}
       reverse
-      imageSource='https://cnbl-cdn.bamgrid.com/assets/f09e9344c17a11eb6aaa054704cdb169ec8c2f9a661a5119994c632c47d72dd1/original'
+      imageSource={language.imagesSource.multidevices}
       imageAlt='4 devices'
       title={language.multidevicesInfoTitle}
       description={language.multidevicesInfoDescription}
