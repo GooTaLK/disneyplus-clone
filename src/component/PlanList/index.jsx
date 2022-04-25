@@ -15,7 +15,7 @@ function PlanList ({ newClass = '' }) {
       <ul className='PlanList-plans'>
         <li>
           <Plan
-            backgroundUrl='https://cnbl-cdn.bamgrid.com/assets/94fdfdd8e58dd050256132d3c5ec13ae75d5133889c6fb627f02053fccf806e3/original'
+            backgroundUrl={language.imagesSource.comboPlanBackground}
             title={language.planComboTitle}
             currency={language.planComboCurrency}
             description={language.planComboDescription}

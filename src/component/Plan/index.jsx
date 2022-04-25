@@ -19,7 +19,7 @@ function Plan ({
     if (typeof backgroundUrl === 'string') {
       plan.current.style.setProperty('background-image', `url(${backgroundUrl})`)
     }
-  }, [])
+  }, [backgroundUrl])
 
   return (
     <div className='Plan' ref={plan}>
