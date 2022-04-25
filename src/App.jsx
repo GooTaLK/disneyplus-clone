@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import './App.css'
 
 import Header from './component/Header'
@@ -9,10 +11,34 @@ import DownloadSection from './component/DownloadSection'
 import Devices from './component/Devices'
 import FAQSection from './component/FAQSection'
 
+const HEIGHT_TO_HIDE_HEADER = 600
+let isHeaderVisible
+
 function App () {
+  const [headerVisibility, setHeaderVisibility] = useState(false)
+
+  isHeaderVisible = headerVisibility
+
+  useEffect(() => {
+    function toggleHeader () {
+      const thumbPosition = window.scrollY < HEIGHT_TO_HIDE_HEADER ? 'top' : 'bottom'
+      console.log(thumbPosition)
+      if (thumbPosition === 'top' && !isHeaderVisible) return
+      if (thumbPosition === 'bottom' && isHeaderVisible) return
+
+      console.log('exec -- scroll')
+
+      setHeaderVisibility((prevVisibleState) => !prevVisibleState)
+    }
+
+    window.addEventListener('scroll', toggleHeader)
+
+    return () => window.removeEventListener('scroll', toggleHeader)
+  }, [])
+
   return (
     <div className='App'>
-      <Header visible={false} />
+      <Header visible={headerVisibility} />
       <main>
         <Hero newClass='App-section' />
         <PlanList newClass='App-section' />
