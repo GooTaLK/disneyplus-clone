@@ -22,11 +22,8 @@ function App () {
   useEffect(() => {
     function toggleHeader () {
       const thumbPosition = window.scrollY < HEIGHT_TO_HIDE_HEADER ? 'top' : 'bottom'
-      console.log(thumbPosition)
       if (thumbPosition === 'top' && !isHeaderVisible) return
       if (thumbPosition === 'bottom' && isHeaderVisible) return
-
-      console.log('exec -- scroll')
 
       setHeaderVisibility((prevVisibleState) => !prevVisibleState)
     }
