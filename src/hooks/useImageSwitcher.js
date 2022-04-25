@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-function useImageSwitcher ({ sources = { medium: '', large: '' }, breakPoint = 768 }) {
+function useImageSwitcher ({ sources = { medium: '', large: '' }, breakPoint = 768, dependencies }) {
   const [imageSource, setImageSource] = useState()
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function useImageSwitcher ({ sources = { medium: '', large: '' }, breakPoint = 7
     return () => {
       window.removeEventListener('resize', chooseImageSource)
     }
-  }, [imageSource])
+  }, [imageSource, ...dependencies])
 
   return imageSource
 }

@@ -12,7 +12,8 @@ function DownloadSection ({ newClass = '' }) {
     sources: {
       medium: language.imagesSource.downloadSectionMedium,
       large: language.imagesSource.downloadSectionLarge
-    }
+    },
+    dependencies: [language.language]
   })
 
   return (
