@@ -15,6 +15,12 @@
   max-width: 1024px;
 }
 
+.Footer-selectLanguage {
+  position: relative;
+  display: inline-block;
+  opacity: 0.6;
+}
+
 .Footer-selectLanguage > select {
   appearance: none;
   display: inline-block;
@@ -34,6 +40,37 @@
 
 .Footer-selectLanguage > select > option {
   color: var(--black);
+}
+
+.Footer-globe,
+.Footer-down {
+  position: absolute;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.Footer-globe {
+  top: 49%;
+  left: 2px;
+  width: 18px;
+}
+
+.Footer-globe .cls-1 {
+  fill: var(--white);
+}
+
+.Footer-globe .cls-2 {
+  fill: none;
+  stroke: #f9f9f9;
+  stroke-miterlimit: 10;
+  stroke-width: 33px;
+}
+
+.Footer-down {
+  top: 47%;
+  right: 2px;
+  width: 22px;
+  fill: var(--white);
 }
 
 .Footer-links {
