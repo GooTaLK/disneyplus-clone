@@ -27,6 +27,7 @@ function Plan ({
       <h3>{currency}</h3>
       <p className='medium'>{description}</p>
       <Button
+        newClass='medium'
         color={buttonColor}
         href={link}
         target='_blank'
