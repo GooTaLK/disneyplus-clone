@@ -25,3 +25,7 @@ yarn preview
 ```
 
 > Note: You need yarn installed previusly on your system
+
+## Demo
+
+- Uploaded on Netlify: https://goota-disneyplus-clone.netlify.app
