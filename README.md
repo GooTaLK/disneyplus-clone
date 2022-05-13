@@ -8,11 +8,11 @@
 
 ## Overview
 
-On this project I try to replicate a landing page using react. The choosen one was [Disneyplus](https://www.disneyplus.com) web page.
+On this project I replied a landing page using react. The chosen one was [Disneyplus](https://www.disneyplus.com) web page.
 
 ## Local deployment
 
-This app does use of **Vite** and **yarn**. so local deployment is simple as run the following:
+This app makes use of **Vite** and **yarn**, so local deployment is as simple as run the following:
 
 ```
 yarn build
